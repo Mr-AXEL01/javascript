@@ -1,0 +1,139 @@
+/* Reset default form styles */
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+  }
+  /* Background container */
+  body{
+    background-image: url("background.jpg");
+    background-size: cover;
+    background-position: center;
+  }
+.container {
+    height: 100vh; /* Set the height to take up the full viewport height */
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+  }
+  /* Style the form container */
+  form {
+    box-shadow: 0 0 20px rgba(126, 176, 220, 0.863);
+    width: 500px;
+    margin: 3% auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 50px;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   background-color: rgba(175, 186, 228, 0.7);
+  }
+  
+  /* Style form elements */
+  form div {
+    margin-bottom: 15px;
+  }
+  
+  label {
+    display: block;
+    font-weight: bold;
+    
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  input[type="tel"],
+  textarea {
+    width: 450px;
+    padding: 8px;
+    margin-right: 20px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+  }
+  /* to make a defrent between the border of message and others boreder*/
+.message input {
+    border: 1px solid #ccc;
+    padding: 8px;
+    width: 450px;
+    height: 6rem;
+
+    border-radius: 20px;
+  }
+  
+  
+  input[type="date"] {
+    padding: 8px;
+    border: none;
+    border-radius: 50px;
+  }
+  /* Error messages */
+.error-message {
+    color: rgb(255, 0, 0);
+    font-size: 13px;
+    margin-top: 5px;
+  }
+  button[type="submit"] {
+    background-color: #218b24;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #33e63c;
+    transform: scale(1.1);
+  }
+  #submitted-data{
+    box-shadow: 0 0 20px rgba(126, 176, 220, 0.863);
+    max-width: 300px;
+    margin: 3% auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(175, 186, 228, 0.7);
+  }
+
+
+  /* Add responsive styles for mobile devices */
+@media (max-width: 600px) {
+  /* Adjust the width and margin for the form container */
+  form {
+    width: 90%;
+    margin: 10% auto;
+  }
+
+  /* Adjust the width of the form elements */
+  input[type="text"],
+  input[type="email"],
+  input[type="tel"],
+  textarea,
+  input[type="date"] {
+    width: 100%;
+  }
+  
+  /* Adjust the height of the message input */
+  .message input {
+    height: 10rem;
+  }
+
+  /* Adjust the padding for the form elements */
+  input[type="text"],
+  input[type="email"],
+  input[type="tel"],
+  textarea,
+  input[type="date"],
+  button[type="submit"] {
+    padding: 10px;
+  }
+}
+
+  

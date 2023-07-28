@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Form</title>
+</head>
+<body>
+    <div class="container">
+        <form action="results" onsubmit="submitForm(event)" autocomplete="off" method="post">
+        <div>
+            <label for="name">Full Name : </label>
+            <input id="name" type="text">
+        </div>
+        <div>
+            <label for="email">Email : </label>
+            <input id="email" type="email" name="name">
+        </div>
+        <div>
+            <label for="phone">Phone : </label>
+            <input id="phone" type="tel" name="phone">
+        </div>
+        <div class="message">
+            <label for="message">Message : </label>
+            <input id="message" name="message" type="text">
+        </div>
+        <div>
+            <label for="date">Date : </label>
+            <input id="date" type="date" name="date" min="2000-01-01" max="2024-01-01">
+        </div>
+        <div>
+            <button type="submit"> submit</button>
+        </div>
+    </form>
+    </div>
+    <div id="submitted-data"></div>
+    <script src="index.js"></script>
+</body>
+</html>
