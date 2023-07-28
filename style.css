@@ -44,8 +44,7 @@
   
   input[type="text"],
   input[type="email"],
-  input[type="tel"],
-  textarea {
+  input[type="tel"] {
     width: 450px;
     padding: 8px;
     margin-right: 20px;
@@ -56,7 +55,7 @@
 .message input[type="text"] {
     border: 1px solid #ccc;
     padding: 8px;
-    width: 450px;
+    width: 100%;
     height: 6rem;
 }
   input[type="date"] {
@@ -100,14 +99,17 @@
     align-items: center;
     background-color: rgba(175, 186, 228, 0.7);
   }
-
+  .message{
+    width: 70%;
+  }
 
   /* Add responsive styles for mobile devices */
-@media (max-width: 600px) {
+  @media (max-width: 600px) {
+
   /* Adjust the width and margin for the form container */
   form {
     width: 90%;
-    margin: 10% auto;
+    margin: 10%;
   }
 
   /* Adjust the width of the form elements */
@@ -121,17 +123,33 @@
   
   /* Adjust the height of the message input */
   .message input {
-    height: 10rem;
+    height: 30rem;
+    width: 150px ;
   }
 
   /* Adjust the padding for the form elements */
   input[type="text"],
   input[type="email"],
   input[type="tel"],
-  textarea,
   input[type="date"],
   button[type="submit"] {
     padding: 10px;
+  }
+
+  #submitted-data{
+    box-shadow: 0 0 20px rgba(126, 176, 220, 0.863);
+width: 100px;
+    margin: 3% auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 50px;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    justify-content: start;
+    flex-wrap: wrap;
+    align-items: center;
+    background-color: rgba(175, 186, 228, 0.7);
   }
 }
 

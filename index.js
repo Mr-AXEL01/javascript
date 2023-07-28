@@ -34,7 +34,7 @@
 
   let regexPhone = /^(?:\+212|0)([5-7]\d{8})$/;
   if (!regexPhone.test(phone)) {
-    displayErrorMessage('phone', 'Invalid phone number. It should start with +212 or 0 and have 9 digits.');
+    displayErrorMessage('phone', 'Invalid phone number. It should start with "+212" or "0" and have 9 digits.');
     return; // Stop form submission if there's an error
   }
   
@@ -44,7 +44,7 @@
     }
   
     if (!date) {
-      displayErrorMessage('date', 'Please select a Date.');
+      displayErrorMessage('date', 'Please entered the date.');
       return;
     }
   
