@@ -34,7 +34,7 @@
 
   let regexPhone = /^(?:\+212|0)([5-7]\d{8})$/;
   if (!regexPhone.test(phone)) {
-    displayErrorMessage('phone', 'Invalid phone number. It should start with \'+212\' || \`0\` and have 9 digits.');
+    displayErrorMessage('phone', 'Invalid phone number. It should start with +212 or 0 and have 9 digits.');
     return; // Stop form submission if there's an error
   }
   
@@ -59,8 +59,9 @@
   
     // Display the submitted data in the div with id "submitted-data"
     var submittedDataDiv = document.getElementById('submitted-data');
-    submittedDataDiv.innerHTML = submittedData;
-  
+    const div = document.createElement("div");
+    div.innerHTML = submittedData
+    submittedDataDiv.appendChild(div)
     // Reset the form inputs
     event.target.reset();
   }
